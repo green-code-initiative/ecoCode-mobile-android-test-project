@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:background="#0FFFFF"
+        android:src="#0FFFFF"
+        android:foreground="#0FFFFF"/> <!-- Issue @android:src - @android:background - @android:foreground {Sobriety: Dark UI} -->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:background="#000000"
+        android:src="#000000"
+        android:foreground="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:shadowColor="#FFFFFF"></TextView> <!-- Issue @android:foreground - @android:foregroundTint - @android:textColor - @android:tint - @android:textColorHighlight - @android:textColorHint - @android:textColorLink - @android:shadowColor {Sobriety: Dark UI} -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#000000"
+        android:foregroundTint="#000000"
+        android:textColor="#000000"
+        android:tint="#000000"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:shadowColor="@color/black"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
