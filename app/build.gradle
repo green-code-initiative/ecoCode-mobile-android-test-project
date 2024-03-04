@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "io.ecocode.testapp"
         minSdkVersion 26
-        targetSdkVersion 33 // Issue {Release: Supported Version Range}
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         multiDexEnabled multidex // Issue {Release: Fat App}
@@ -22,7 +22,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true // Issue {Release: Disable Obfuscation}
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
