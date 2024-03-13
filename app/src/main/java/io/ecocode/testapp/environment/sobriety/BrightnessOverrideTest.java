@@ -6,7 +6,7 @@ import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
+import static android.view.WindowManager.LayoutParams;
 import static android.view.WindowManager.LayoutParams.BRIGHTNESS_OVERRIDE_FULL;
 import static android.view.WindowManager.LayoutParams.BRIGHTNESS_OVERRIDE_NONE;
 
@@ -28,5 +28,10 @@ public class BrightnessOverrideTest extends AppCompatActivity {
         blabla*=1.5;
         params.screenBrightness = blabla;
         getWindow().getAttributes().screenBrightness = 1f; // Issue {Sobriety: Brightness Override}
+        getWindow().getAttributes().screenBrightness = WindowManager.LayoutParams.BRIGHTNESS_OVERRIDE_FULL; // Issue {Sobriety: Brightness Override}
+        getWindow().getAttributes().screenBrightness = 1; // Issue {Sobriety: Brightness Override}
+        getWindow().getAttributes().screenBrightness = LayoutParams.BRIGHTNESS_OVERRIDE_FULL; // Issue {Sobriety: Brightness Override}
+        getWindow().getAttributes().screenBrightness = WindowManager.LayoutParams.BRIGHTNESS_OVERRIDE_FULL; // Issue {Sobriety: Brightness Override}
+        getWindow().getAttributes().screenBrightness = android.view.WindowManager.LayoutParams.BRIGHTNESS_OVERRIDE_FULL; // Issue {Sobriety: Brightness Override}
     }
 }
